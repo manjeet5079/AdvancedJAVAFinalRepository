@@ -70,10 +70,9 @@
 				out.println(e);
 			}
 		} //end if
-		else if(request.getMethod().equalsIgnoreCase("GET")){
-			
+		else if(request.getMethod().equalsIgnoreCase("GET")){			
 			Vector<Bean> vect = db.getStudent();
-			%>
+	  %>
 	<table width="350" border="1">
 		<tr>
 			<th>Id</th>
@@ -82,8 +81,8 @@
 			<th>Surname</th>
 		</tr>
 		<%
-					for (Bean std : vect) {
-				%>
+		 for (Bean std : vect) {
+		%>
 		<tr>
 			<td><%=std.Id%></td>
 			<td><%=std.Name%></td>
@@ -91,8 +90,8 @@
 			<td><%=std.Surname%></td>
 		</tr>
 		<%
-			    }
-		        %>
+		  }
+		 %>
 	</table>
 	<%		
 		}
