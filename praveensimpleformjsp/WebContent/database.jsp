@@ -1,4 +1,3 @@
-<!-- Query for create table in mysql create table Student (StudentName int NOT NULL AUTO_INCREMENT, StudentName VARCHAR(20),FatherName VARCHAR(20),surname VARCHAR(20) ); -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" import="java.sql.*" errorPage="" %>
 <%@page import="java.util.*" %>
