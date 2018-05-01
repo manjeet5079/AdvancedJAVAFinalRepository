@@ -27,7 +27,8 @@ public class EmpDaoImpl implements EmpDao {
 		List<Employee> empList = query.getResultList();
 		hsession.close();
 		return empList;
-	}
+	}	
+	
 
 	/**
 	 * 
@@ -83,6 +84,15 @@ public class EmpDaoImpl implements EmpDao {
 		hsession.close();
 		return emp;
 	}
+	
+	public List<Employee> getAllEmpRecords() {
+		Session hsession = HibernateUtil.getSessionFactory().openSession();
+		String hql = "From Employee";
+		Query query = hsession.createQuery(hql);		
+		List<Employee> empList = query.getResultList();
+		hsession.close();
+		return empList;
+	}	
 	
 	public void updateEmp(Employee emp) {
 		SessionFactory sf = HibernateUtil.getSessionFactory();

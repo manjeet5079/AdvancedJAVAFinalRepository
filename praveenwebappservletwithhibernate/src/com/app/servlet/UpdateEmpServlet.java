@@ -16,7 +16,7 @@ import com.app.util.AppConstants;
 
 @WebServlet("/updateEmp")
 public class UpdateEmpServlet extends HttpServlet {
-	
+	private static final long serialVersionUID = 6658921751608286560L;
 
 	@Override
 	protected void doGet(HttpServletRequest request,

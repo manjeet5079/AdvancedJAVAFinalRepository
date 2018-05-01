@@ -10,5 +10,9 @@ public class AppConstants {
 	
 	public static String updateSuccMsg = "Emp Record update succesfully with Emp ID :";
 	public static String updateFailMsg = "Failed to update Emp Record with Emp ID: ";
+	
+	public static String searchSuccMsg = "Emp Record available for Emp ID : ";
+	public static String searchFailMsg = "Emp Record not available for EmpID:";
+	
 
 }

@@ -15,8 +15,7 @@ import com.app.model.Employee;
 
 @WebServlet("/EditEmpServlet")
 public class EditEmpServlet extends HttpServlet {
-
-	
+	private static final long serialVersionUID = 6575614388084431298L;
 
 	@Override
 	protected void doGet(HttpServletRequest request,

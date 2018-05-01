@@ -17,6 +17,7 @@ import com.app.util.AppConstants;
 
 @WebServlet("/viewEmpData")
 public class ViewEmpDataServlet extends HttpServlet {
+	private static final long serialVersionUID = -3673545902781715705L;
 	private static Integer PAGE_SIZE = 0;
 	private static Integer pageNumber = 1;
 	private static Integer totalPages = 1;
@@ -46,7 +47,7 @@ public class ViewEmpDataServlet extends HttpServlet {
 
 		request.setAttribute("empList", empList);
 
-		RequestDispatcher rd = request.getRequestDispatcher("empData.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("viewEmpData.jsp");
 		rd.forward(request, response);
 
 	}

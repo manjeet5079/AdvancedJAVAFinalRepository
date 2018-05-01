@@ -17,5 +17,7 @@ public interface EmpDao {
 	public Employee getEmpById(Integer eid);
 	
 	public void updateEmp(Employee emp);
+	
+	public List<Employee> getAllEmpRecords();
 
 }

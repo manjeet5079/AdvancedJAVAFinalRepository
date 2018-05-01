@@ -16,6 +16,8 @@ import com.app.util.AppConstants;
 
 @WebServlet("/insertEmp")
 public class InsertEmpServlet extends HttpServlet {	
+	private static final long serialVersionUID = -2229106132319138033L;
+
 	@Override
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -48,7 +50,7 @@ public class InsertEmpServlet extends HttpServlet {
 		}
 
 		// redirecting the user to same page with success/error msg
-		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("registerEmp.jsp");
 		rd.forward(request, response);
 
 	}

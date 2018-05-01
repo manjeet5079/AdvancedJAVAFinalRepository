@@ -5,6 +5,6 @@
 	id="WebApp_ID" version="3.1">
 	<display-name>praveenwebappservletwithhibernate</display-name>
 	<welcome-file-list>
-		<welcome-file>Register.jsp</welcome-file>		
+		<welcome-file>registerEmp.jsp</welcome-file>		
 	</welcome-file-list>	
 </web-app>

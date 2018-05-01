@@ -15,6 +15,7 @@ import com.app.util.AppConstants;
 
 @WebServlet("/DeleteEmpServlet")
 public class DeleteEmpServlet extends HttpServlet {
+	private static final long serialVersionUID = -2174479927721976597L;
 
 	@Override
 	protected void doGet(HttpServletRequest request,
