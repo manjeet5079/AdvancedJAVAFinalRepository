@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class DBFactory {
 	public static Connection getConnection(){
 		String driverClass="com.mysql.cj.jdbc.Driver";
-		String url="jdbc:mysql://localhost:3306/Praveen";
+		String url="jdbc:mysql://localhost:3306/Praveen?autoReconnect=true&useSSL=false";
 		String user="root";
 		String password="";
 		Connection con=null;

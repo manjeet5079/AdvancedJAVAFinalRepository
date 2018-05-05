@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>  
-<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">  
-<struts>  
-<package name="default" extends="struts-default">    
-<action name="product" class="com.praveen.model.Product">  
-<result name="success">welcome.jsp</result>  
-</action>  
-  
-</package>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+ <constant name="struts.devMode" value="true" />
+	<package name="product" extends="struts-default">
+		<action name="product" class="com.praveen.model.Product">
+			<result name="success">welcome.jsp</result>
+		</action>
+	</package>
+	<package name="tutorial" namespace="/tutorials" extends="struts-default">
+		<action name="getTutorial" class="com.praveen.action.TutorialAction" method="">
+			<result name="success">/success.jsp</result>
+		</action>	
+	</package>
+
+	<include file="login.xml"></include>
+
+	<package name="search" namespace="/" extends="struts-default">
+		<action name="search*">
+			<result>/search{1}.jsp</result>
+		</action>
+
+	</package>
 </struts>    
